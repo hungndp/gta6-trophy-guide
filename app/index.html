@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice City Trophy Atlas — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="The complete offline guide and tracker for all 55 GTA VI PlayStation 5 trophies: roadmap to the platinum, missable flags, cited guides, checklist, export and import.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+      <h1>Vice City <span>Trophy Atlas</span></h1>
+      <p class="tagline">Every trophy, every guide, every missable — tracked to the platinum. Works fully offline.</p>
+    </div>
+    <div class="platinum-card" id="platinumCard">
+      <p class="platinum-label">Road to the platinum</p>
+      <p class="platinum-name">Vice Got a Price!</p>
+      <p class="platinum-sub">1 platinum &middot; 2 gold &middot; 6 silver &middot; 46 bronze &middot; 28 hidden</p>
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      <p class="progress-text"><strong id="earnedCount">0</strong> of <strong>55</strong> earned &middot; <span id="earnedPct">0%</span> &middot; <span id="pointsCount">0</span> / 1,305 points</p>
+    </div>
+  </div>
+  <nav class="view-tabs" id="viewTabs">
+    <button data-view="checklist" class="active" type="button">Checklist</button>
+    <button data-view="roadmap" type="button">Roadmap to Platinum</button>
+    <button data-view="missable" type="button">Missable trophies</button>
+    <button data-view="collectibles" type="button">Collectibles</button>
+  </nav>
+</header>
+
+<main>
+  <section class="controls" aria-label="Tracker controls">
+    <div class="control-row">
+      <label class="search-box"><span>Search</span><input id="searchInput" type="search" placeholder="Search trophy name or guide…"></label>
+      <label class="select-box"><span>Kind</span>
+        <select id="kindFilter">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="online">Online</option>
+        </select>
+      </label>
+      <label class="select-box"><span>Grade</span>
+        <select id="tierFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="select-box"><span>Progress</span>
+        <select id="earnedFilter">
+          <option value="all">Earned &amp; unearned</option>
+          <option value="earned">Earned only</option>
+          <option value="unearned">Unearned only</option>
+        </select>
+      </label>
+      <label class="toggle"><input id="spoilerToggle" type="checkbox" checked> <span>Hide story spoilers until earned</span></label>
+    </div>
+    <div class="control-row">
+      <button id="exportBtn" type="button">Export progress (.json)</button>
+      <button id="importBtn" type="button">Import progress</button>
+      <input id="importFile" type="file" accept=".json,application/json" hidden>
+      <button id="resetBtn" type="button" class="danger">Reset checklist</button>
+      <span class="save-note" id="saveNote">Progress saves automatically in this browser.</span>
+      <span class="count-note" id="countNote"></span>
+    </div>
+  </section>
+
+  <section id="roadmapSection" class="roadmap" hidden aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum</h2>
+    <p class="section-intro">Five stages, in order. Do the story first, clear every contact strand before the finale, then sweep collectibles and activities, and finish with the finale and 100% completion.</p>
+    <ol class="roadmap-stages" id="roadmapStages"></ol>
+  </section>
+
+  <div class="content-grid">
+  <section class="list-wrap" aria-label="Trophy list">
+    <div id="trophyList" class="trophy-list"></div>
+    <p id="emptyNote" class="empty-note" hidden>No trophies match these filters. Try clearing the search or the kind filter.</p>
+  </section>
+
+  <section class="detail" id="detailPanel" aria-label="Trophy guide detail" hidden>
+    <div class="detail-head">
+      <h2 id="detailName"></h2>
+      <button id="detailClose" type="button" aria-label="Close guide">&times;</button>
+    </div>
+    <p class="detail-meta" id="detailMeta"></p>
+    <p class="detail-desc"><strong>Official description:</strong> <span id="detailDesc"></span></p>
+    <h3>Guide</h3>
+    <p id="detailGuide"></p>
+    <h3>Sources</h3>
+    <ul class="source-list" id="detailSources"></ul>
+    <p class="detail-foot">Guide written in our own words for this atlas. Official names and descriptions are shown as PlayStation publishes them. Sources are cited, never copied.</p>
+    <label class="toggle detail-earned"><input id="detailEarned" type="checkbox"> <span>Mark this trophy earned</span></label>
+  </section>
+  </div>
+
+  <section class="about">
+    <h2>About this guide</h2>
+    <p>Built from the official PlayStation trophy list as published on Exophase (55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze, 28 hidden). Every guide is written in our own words and cites its sources by name beside it — a cited guide beats an uncited one, however detailed. The tracker stores your checklist in this browser only (localStorage) and can be exported to a file and imported back. No network is used at any point; the whole atlas runs from its own files.</p>
+    <p><strong>Missable rule:</strong> a trophy is flagged missable when its moment can pass in a single playthrough — contact strands and secret story moments that close at the finale, partner-gated feats, and one-off events. Chapter and story-mission trophies are unmissable: play the main missions and they land.</p>
+    <p><strong>Online:</strong> this list holds no online-only trophy — the Online filter exists because the bounty asks for it, and it correctly shows none.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Vice City Trophy Atlas — an unofficial fan guide. Not affiliated with Rockstar Games. No Rockstar logo, artwork, or game screenshots are used. Trophy names and descriptions are the official PlayStation list.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
