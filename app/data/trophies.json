@@ -13,7 +13,9 @@
     {"id": 8, "name": "IGN Wiki", "url": "https://www.ign.com/wikis/grand-theft-auto-6", "note": "Mission walkthroughs and collectible maps"},
     {"id": 9, "name": "GameFAQs", "url": "https://gamefaqs.gamespot.com/ps5/grand-theft-auto-vi/faqs", "note": "Community FAQs and completion checklists"},
     {"id": 10, "name": "Eurogamer", "url": "https://www.eurogamer.net/grand-theft-auto-6-trophy-guide", "note": "Trophy explainers and chapter guides"},
-    {"id": 11, "name": "GamesRadar+", "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-trophies/", "note": "Trophy tips and hidden trophy coverage"}
+    {"id": 11, "name": "GamesRadar+", "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-trophies/", "note": "Trophy tips and hidden trophy coverage"},
+    {"id": 12, "name": "GTABase", "url": "https://www.gtabase.com/grand-theft-auto-vi/", "note": "Trophy list, guides and collectible maps"},
+    {"id": 13, "name": "KeenGamer", "url": "https://www.keengamer.com/", "note": "Trophy guide and platinum roadmap"}
   ],
   "trophies": [
     {"id": 1, "name": "Vice Got a Price!", "guide": "Earn the other 54 trophies and the platinum unlocks automatically with the last one. Work through the story first, then sweep the remaining collectibles and activities in free roam, keeping a rolling manual save before each chapter ends.", "description": "Congratulations! You're a Leonida Legend.", "tier": "platinum", "points": 300, "secret": false, "kind": "misc", "missable": false, "atRisk": false, "lastChance": null, "steps": [
@@ -21,7 +23,8 @@
       {"t": "Play the story first, then sweep collectibles and activities in free roam.", "c": [3, 5]},
       {"t": "Keep a rolling manual save before each chapter ends so one-off moments stay reachable.", "c": [3, 10]},
       {"t": "Track the in-game 100% checklist; the platinum effectively requires near-total completion.", "c": [2, 8]},
-      {"t": "Budget serious time: launch-week guides put the platinum well past 100 hours.", "c": [3, 11]}
+      {"t": "Budget serious time: launch-week guides put the platinum well past 100 hours.", "c": [3, 11]},
+      {"t": "Work the roadmap stages in order — story, strands, collectible sweep, activities, then money and 100% — so no late trophy starts from zero.", "c": [13, 3]}
     ]},
     {"id": 2, "name": "Just Like Paradise", "guide": "Complete the early story mission Gone Fishing, which introduces working as a duo. Follow the marker to the boat, land the required catches in the fishing tutorial, and finish the trip back to shore.", "description": "Complete Gone Fishing.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Gone Fishing is an early story mission that introduces working as a duo.", "c": [8, 10]},
@@ -29,35 +32,40 @@
       {"t": "Land the required catches; a lost fish only restarts that cast, never the mission.", "c": [9, 11]},
       {"t": "Complete the trip back to shore and the trophy pops on the mission-complete screen.", "c": [2, 5]},
       {"t": "It also unlocks the fishing spots used by later activity trophies.", "c": [8, 3]},
-      {"t": "Missed it? Chapter replay restores story missions at any time.", "c": [4, 9]}
+      {"t": "Missed it? Chapter replay restores story missions at any time.", "c": [4, 9]},
+      {"t": "The same fishing tutorial unlocks the tackle shop's better rods, which pay off later against Cal's fishing challenge.", "c": [11, 12]}
     ]},
     {"id": 3, "name": "Paradise Lost", "guide": "Play through every story mission in Chapter 1 in order. Nothing in the opening chapter is missable or choice-dependent, and the trophy pops as the chapter closes into Chapter 2.", "description": "Complete Chapter 1.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Simply play through the opening chapter's story missions in order.", "c": [8, 10]},
       {"t": "No choices in Chapter 1 change this trophy; it is strictly progress-based.", "c": [2, 3]},
       {"t": "The trophy pops when the Chapter 1 title card resolves into Chapter 2.", "c": [5, 9]},
       {"t": "Chapter 1 teaches movement, driving and the phone; nothing here is missable.", "c": [4, 11]},
-      {"t": "Finishing it unlocks free-roam saving and the first safehouse.", "c": [9]}
+      {"t": "Finishing it unlocks free-roam saving and the first safehouse.", "c": [9]},
+      {"t": "Before Chapter 1 ends, take the balcony meditation at Jason's house when Lucia offers it — that one-off moment belongs to this chapter alone.", "c": [3, 13]}
     ]},
     {"id": 4, "name": "T**s Ass Drug Money", "guide": "Finish every Chapter 2 story mission. Side content can wait for free roam, and the trophy unlocks as the chapter-ending cutscene finishes.", "description": "Complete Chapter 2.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Finish every Chapter 2 story mission; side content can wait for free roam.", "c": [8, 3]},
       {"t": "Chapter 2 opens up more of Vice City, so exploration trophies become easier here.", "c": [10, 11]},
       {"t": "The trophy unlocks as the chapter-ending cutscene finishes.", "c": [2, 5]},
       {"t": "Watch for the first stranger markers appearing near the end of this chapter.", "c": [8, 4]},
-      {"t": "Chapter completion also banks progress toward the 100% checklist.", "c": [2, 9]}
+      {"t": "Chapter completion also banks progress toward the 100% checklist.", "c": [2, 9]},
+      {"t": "Use the new map space to start the vehicle-discovery habit early: drive anything new you see parked rather than passing it by.", "c": [12, 8]}
     ]},
     {"id": 5, "name": "Vice City, Baby!", "guide": "Complete the Chapter 3 mission chain, including its longer set-piece missions and heist prep. The trophy pops at the chapter-complete screen before Chapter 4 begins.", "description": "Complete Chapter 3.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Complete the Chapter 3 mission chain; expect longer set-piece missions.", "c": [8, 10]},
       {"t": "Stranger strands start appearing widely in Chapter 3, so pick them up as you pass.", "c": [3, 9]},
       {"t": "The trophy pops at the chapter-complete screen, before Chapter 4 begins.", "c": [2, 5]},
       {"t": "Mid-chapter missions introduce heist prep; keep a spare garage slot free.", "c": [10, 4]},
-      {"t": "Completion unlocks more of the map for The Goodtime State.", "c": [8, 11]}
+      {"t": "Completion unlocks more of the map for The Goodtime State.", "c": [8, 11]},
+      {"t": "Heist-prep garages and interiors in this chapter hide early Collectible Cards, so sweep rooms before leaving a mission area.", "c": [12, 3]}
     ]},
     {"id": 6, "name": "Top Of The World, Ma", "guide": "Finish all Chapter 4 missions, the last full chapter before the endgame. Clear any at-risk stranger strands first, since the trophy unlocks as the chapter closes and the final mission opens.", "description": "Complete Chapter 4.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Finish the Chapter 4 missions; this is the last full chapter before the endgame.", "c": [8, 3]},
       {"t": "Before starting the finale, clear any at-risk stranger strands listed in the Missable Watch.", "c": [3, 2]},
       {"t": "The trophy unlocks when Chapter 4 closes and the final mission unlocks.", "c": [5, 10]},
       {"t": "This chapter's ending raises the stakes; finish open stranger strands soon after.", "c": [3, 4]},
-      {"t": "Medals are irrelevant here; only completion matters.", "c": [2, 9]}
+      {"t": "Medals are irrelevant here; only completion matters.", "c": [2, 9]},
+      {"t": "Treat the end of this chapter as the roadmap's point of no return: clear at-risk strands and bank a fresh manual save before moving on.", "c": [13, 3]}
     ]},
     {"id": 7, "name": "You Gotta Know When to Get Off", "guide": "Complete the final mission and play through to the credits. Bank a separate manual save and stock up on armour, snacks and top-tier weapons before the point-of-no-return prompt.", "description": "Complete the final mission.", "tier": "gold", "points": 90, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Start the final mission only after banking a separate manual save in another slot.", "c": [3, 10]},
@@ -65,14 +73,16 @@
       {"t": "Play the finale to the credits; the gold pops as the ending resolves.", "c": [2, 5]},
       {"t": "Free roam continues after the credits, so cleanup trophies remain available.", "c": [3, 9]},
       {"t": "If a choice prompt appears near the end, remember the missable-choice trophy needs a prior save.", "c": [3, 10]},
-      {"t": "Dying in the finale restarts the current section, never the whole mission.", "c": [4, 9]}
+      {"t": "Dying in the finale restarts the current section, never the whole mission.", "c": [4, 9]},
+      {"t": "One playthrough can still cover both endings if that pre-choice save exists: finish a branch, reload the fresh slot, and take the other side.", "c": [13, 3]}
     ]},
     {"id": 8, "name": "Trust", "guide": "Complete the story mission Breakfast Run by finishing its delivery route inside the mission timer. The trophy pops on the mission-complete screen and no medal is required.", "description": "Complete Breakfast Run.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Breakfast Run is a named story mission; start it from its map marker.", "c": [8, 10]},
       {"t": "Complete the delivery route within the mission's own generous timer.", "c": [9]},
       {"t": "The trophy pops on the mission-complete screen, no medal required.", "c": [2, 5]},
       {"t": "The route passes Ocean Beach, an early look at a later hidden-trophy spot.", "c": [8, 4]},
-      {"t": "Failing the timer only restarts the current leg of the run.", "c": [9, 11]}
+      {"t": "Failing the timer only restarts the current leg of the run.", "c": [9, 11]},
+      {"t": "Breakfast Run doubles as an easy early drive for vehicle discovery — swap into any new parked model you pass on the route.", "c": [12, 10]}
     ]},
     {"id": 9, "name": "Break the Bank", "guide": "Complete The Cartel Heist after finishing its setup missions. Either approach and crew choice works; escape the post-heist wanted level and the trophy unlocks after the payout cutscene.", "description": "Complete The Cartel Heist.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "The Cartel Heist is a mid-story set piece; finish its setup missions first.", "c": [8, 3]},
@@ -80,42 +90,49 @@
       {"t": "Escape the post-heist wanted level to close the mission out.", "c": [9, 5]},
       {"t": "The trophy unlocks once the heist payout cutscene ends.", "c": [2]},
       {"t": "Heist payout cash is a good early fund for the big-spending trophies.", "c": [11, 4]},
-      {"t": "Either crew choice works; pick the quieter one for an easier escape.", "c": [10, 9]}
+      {"t": "Either crew choice works; pick the quieter one for an easier escape.", "c": [10, 9]},
+      {"t": "The heist's getaway cars are driven, not just cutscene props — each new model you take the wheel of quietly feeds the 100-vehicle count.", "c": [12, 11]}
     ]},
     {"id": 10, "name": "Family Matters", "guide": "Complete the character-focused story mission Child's Play by following its marker chain to the final cutscene. There are no fail-state collectibles inside it and dialogue choices are flavour only.", "description": "Complete Child's Play.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Child's Play is a character-focused story mission; follow its marker chain.", "c": [8, 10]},
       {"t": "There are no fail-state collectibles inside it; just reach the final cutscene.", "c": [9]},
       {"t": "The trophy pops at mission complete.", "c": [2, 5]},
       {"t": "Dialogue choices here are flavour only and change nothing later.", "c": [4, 10]},
-      {"t": "The mission introduces a recurring character used by later stranger strands.", "c": [8, 9]}
+      {"t": "The mission introduces a recurring character used by later stranger strands.", "c": [8, 9]},
+      {"t": "Note the interiors on this route: family-mission buildings are reused for card pickups in the collectible sweep.", "c": [12, 4]}
     ]},
     {"id": 11, "name": "DWNFALL", "guide": "Complete the story mission Headliners, built around a public event gone wrong. Stay with the objective markers during the crowd sequence, finish the scripted escape, and the trophy unlocks at mission complete.", "description": "Complete Headliners.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Headliners is a story mission built around a public event gone wrong.", "c": [8, 11]},
       {"t": "Stay with the objective markers during the crowd sequence rather than free-fighting.", "c": [10, 9]},
       {"t": "Finish the escape segment and the trophy unlocks at mission complete.", "c": [2, 5]},
       {"t": "A wanted level during the escape is scripted; losing it is part of the mission.", "c": [9, 4]},
-      {"t": "Completion feeds the story count on the road to the platinum.", "c": [2]}
+      {"t": "Completion feeds the story count on the road to the platinum.", "c": [2]},
+      {"t": "The public-event venue stays open in free roam afterwards, making it a reliable spot to revisit for photo-style WAiNK locations nearby.", "c": [8, 12]}
     ]},
     {"id": 12, "name": "Hi-Jacked", "guide": "Complete the airport story mission VCIA Takedown by working through the terminal objectives in order alongside your partner. Note the airside layout, since you return here in free roam for another trophy.", "description": "Complete VCIA Takedown.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "VCIA Takedown is the airport story mission; it also sets up the VCIA free-roam trophy.", "c": [8, 10]},
       {"t": "Work through the terminal objectives in order and keep your partner in sight.", "c": [9, 11]},
       {"t": "The trophy pops when the takedown cutscene ends.", "c": [2, 5]},
       {"t": "Note the airside layout; you will return here in free roam for Catch Me If You Can.", "c": [8, 4]},
-      {"t": "No optional objectives inside affect any other trophy.", "c": [9, 5]}
+      {"t": "No optional objectives inside affect any other trophy.", "c": [9, 5]},
+      {"t": "While airside, clock the parked service vehicles and the small plane spawn — both feed the vehicle and unscheduled-departure trophies later.", "c": [12, 8]}
     ]},
     {"id": 13, "name": "Snow Storm", "guide": "Complete the late-story assault mission Operation Savage Glory. Bring full armour and ammo, and use Combat Focus in the warehouse section to thin out grouped enemies before the final holdout.", "description": "Complete Operation Savage Glory.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Operation Savage Glory is a late-story assault mission; bring full armour and ammo.", "c": [8, 3]},
       {"t": "Use Combat Focus in the warehouse section to thin out grouped enemies safely.", "c": [10, 11]},
       {"t": "The trophy unlocks at the mission-complete screen after the final wave.", "c": [2, 5]},
       {"t": "Bring a rifle with a large magazine for the final holdout.", "c": [11, 4]},
-      {"t": "The mission's Combat Focus section is a good practice spot for Gunslinger.", "c": [10, 3]}
+      {"t": "The mission's Combat Focus section is a good practice spot for Gunslinger.", "c": [10, 3]},
+      {"t": "Save a manual slot right before this assault: its warehouse is the densest scripted group for rehearsing the five-takedown Focus window.", "c": [3, 13]}
     ]},
     {"id": 14, "name": "A Long Road", "guide": "Reach exactly 100 percent on the pause-menu completion checklist. Story, stranger strands, collectibles, activities and hobbies all feed the counter, and most categories only need a share of their total rather than everything.", "description": "Attain 100% Completion.", "tier": "gold", "points": 90, "secret": false, "kind": "misc", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Open the pause-menu 100% checklist and treat it as the single source of truth.", "c": [2, 8]},
       {"t": "Story, stranger strands, collectibles, activities and hobbies all feed the percentage.", "c": [3, 9]},
       {"t": "Partial credit counts: most categories only need a share of their total, not everything.", "c": [3, 10]},
       {"t": "Leave stunt jumps and card sets for last; they are the slowest categories to close out.", "c": [11, 5]},
-      {"t": "The gold pops the moment the counter reaches exactly 100.0%.", "c": [2, 1]}
+      {"t": "The gold pops the moment the counter reaches exactly 100.0%.", "c": [2, 1]},
+      {"t": "Cross-check the checklist against the collectible totals — 250 stunts, 100 WAiNK spots, 100 vehicles — and close whichever category sits furthest from its line first.", "c": [12, 3]},
+      {"t": "Remember the checklist stops early in several categories: it asks for 15 of the 18 meditations, so do not grind a category past the point where the screen stops crediting it.", "c": [13, 5]}
     ]},
     {"id": 15, "name": "Cunning Stunts", "guide": "Complete 250 of the marked stunt jumps scattered across Leonida. Use a fast, durable car or bike at full speed, land wheels-down and keep driving for a few seconds so each stunt registers, working region by region.", "description": "Complete 250 Stunts.", "tier": "silver", "points": 30, "secret": false, "kind": "collectible", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Stunts are the marked ramp and jump spots scattered across Leonida; each clean landing counts once.", "c": [3, 8]},
@@ -123,7 +140,8 @@
       {"t": "A stunt only registers if you land wheels-down and keep driving for a few seconds.", "c": [2, 9]},
       {"t": "Work region by region and tick spots off in the Tracker so none get revisited.", "c": [5, 8]},
       {"t": "Failed attempts cost nothing but time; the same ramp can be retried immediately.", "c": [3]},
-      {"t": "The silver pops on the 250th successful stunt, wherever it happens.", "c": [1, 2]}
+      {"t": "The silver pops on the 250th successful stunt, wherever it happens.", "c": [1, 2]},
+      {"t": "Count the full list before you start: the stunt map runs to exactly 250 marked spots, so a missed ramp is findable by comparing your counter region by region.", "c": [12, 8]}
     ]},
     {"id": 16, "name": "Master of None", "guide": "Start each distinct activity type on the map at least once, including races, fishing, the shooting range, arcade games, drone races and meditation. Starting an activity and quitting still counts as trying it.", "description": "Try each type of activity once.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Every distinct activity type on the map needs starting once, not winning.", "c": [3, 4]},
@@ -131,14 +149,16 @@
       {"t": "Filter the map by activities and sweep them in one free-roam session.", "c": [11, 9]},
       {"t": "The trophy pops when the final untouched activity type is started.", "c": [2, 5]},
       {"t": "Starting an activity and quitting still counts as trying it.", "c": [4, 9]},
-      {"t": "The map legend lists every activity icon if one type eludes you.", "c": [8, 11]}
+      {"t": "The map legend lists every activity icon if one type eludes you.", "c": [8, 11]},
+      {"t": "Count types, not sessions: the full list runs from races and the range to fishing, arcade cabinets, drone races and a first meditation, and each type only needs starting once.", "c": [12, 4]}
     ]},
     {"id": 17, "name": "The Shootist", "guide": "Earn a gold medal in every Shooting Range challenge across all weapon classes. Accuracy multiplies score faster than raw speed, so learn each course's target order on a practice run, then use upgraded weapons for the harder courses.", "description": "Earn a gold medal in all Shooting Range challenges.", "tier": "silver", "points": 30, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Visit the shooting range and clear each weapon-class challenge at gold standard.", "c": [3, 8]},
       {"t": "Accuracy multiplies score faster than raw speed; aim for chains of centre hits.", "c": [10, 11]},
       {"t": "Practise each course once to learn target order before a scored gold attempt.", "c": [9, 2]},
       {"t": "Upgraded weapons from Ammu-Nation make the later pistol and rifle courses far easier.", "c": [4, 5]},
-      {"t": "The silver pops when the last challenge flips to gold.", "c": [1, 2]}
+      {"t": "The silver pops when the last challenge flips to gold.", "c": [1, 2]},
+      {"t": "Keep a per-class count as you go — pistol, rifle and specialty courses each hold their own gold line, and the range board shows which class still owes you one.", "c": [12, 3]}
     ]},
     {"id": 18, "name": "Top Fun", "guide": "Win a Top Fun drone race at every location; merely finishing is not enough. Learn each course's gate order on a sighting lap first and cut corners inside gates where the course allows.", "description": "Win a Top Fun Drone Race at every location.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Find each Top Fun drone race start point and win, not merely finish, at every location.", "c": [3, 8]},
@@ -146,13 +166,16 @@
       {"t": "Cut corners inside gates where the course allows; the AI racers rarely do.", "c": [11]},
       {"t": "The trophy pops when the final location's win is recorded.", "c": [2, 5]},
       {"t": "Race locations unlock progressively; the last ones sit in late-game regions.", "c": [4, 8]},
-      {"t": "Wins are stored per location, so the map shows which remain.", "c": [2, 9]}
+      {"t": "Wins are stored per location, so the map shows which remain.", "c": [2, 9]},
+      {"t": "Count locations off the race list as you win them — every Top Fun site needs its own win, and a gold at one site never covers another.", "c": [12, 3]}
     ]},
     {"id": 19, "name": "Earn Cash, Not Kudos", "guide": "Win 20 different races; replaying one favourite does not add to the count. Mix street, off-road, boat and air races, and bring a tuned personal vehicle to street races where stock classes are noticeably slower.", "description": "Win 20 different races.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Twenty different races must be won; replaying one favourite does not add to the count.", "c": [3, 2]},
       {"t": "Mix street, off-road, boat and air races to reach 20 distinct wins fastest.", "c": [8, 10]},
       {"t": "Bring a tuned personal vehicle to street races; stock classes are noticeably slower.", "c": [11, 4]},
       {"t": "Track wins in the Tracker counter so you know how many new races remain.", "c": [5]},
+      {"t": "Work from the race list rather than the map: tick off each named event as you win it, since the counter only credits distinct races, never replays.", "c": [12, 3]},
+      {"t": "Save the air and boat races for calm weather slots in the roadmap's activity stage — their fields are thinner and the wins come faster there.", "c": [13, 10]},
       {"t": "The trophy pops on the 20th distinct race win.", "c": [1]}
     ]},
     {"id": 20, "name": "Baited My Tackle", "guide": "Unlock fishing through the Gone Fishing story mission, then find Cal at his fishing spot and accept his challenge. Out-catch him inside the time limit using your best bait, casting to the ripples where fish are surfacing.", "description": "Beat Cal in a fishing challenge.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
@@ -161,14 +184,16 @@
       {"t": "Use the best bait you own and cast to the ripples where fish are surfacing.", "c": [3]},
       {"t": "The trophy pops as soon as the challenge results show you ahead of Cal.", "c": [2, 5]},
       {"t": "Cal's challenge can be retried immediately if you lose.", "c": [4, 9]},
-      {"t": "Better rods from the tackle shop make the rematch much easier.", "c": [11, 10]}
+      {"t": "Better rods from the tackle shop make the rematch much easier.", "c": [11, 10]},
+      {"t": "Cast where the ripples bunch tightest along Cal's shoreline — his challenge fish school in the same surfacing spots the tutorial taught you to read.", "c": [8, 12]}
     ]},
     {"id": 21, "name": "Stick Fiddler", "guide": "Enter any arcade or bar with a playable cabinet and finish a full run of its mini-game, win or lose. The trophy pops when the game's end screen appears, and no high score is needed.", "description": "Complete an arcade game.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Enter any arcade or bar with a playable cabinet and start a game.", "c": [8, 4]},
       {"t": "Complete means finishing a full run of the mini-game, win or lose.", "c": [10, 9]},
       {"t": "The trophy pops when the game's end screen appears.", "c": [2, 5]},
       {"t": "Any cabinet counts, including the ones inside bars and the arcade hall.", "c": [4, 8]},
-      {"t": "You do not need a high score; finishing the run is enough.", "c": [9, 2]}
+      {"t": "You do not need a high score; finishing the run is enough.", "c": [9, 2]},
+      {"t": "The arcade hall is the surest stop: its cabinets are always powered, unlike bar machines that only wake up during opening hours.", "c": [8, 12]}
     ]},
     {"id": 22, "name": "Road to Rehabilitation", "guide": "Complete Andy's stranger strand, starting at his stranger marker and finishing each of his missions as they unlock in sequence. Finish his final mission before pushing into the late-game chapters to keep the strand safe.", "description": "Complete the final mission for Andy.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": true, "lastChance": "Chapter 4", "steps": [
       {"t": "Andy's strand starts at his stranger marker; complete each of his missions as they appear.", "c": [8, 3]},
@@ -176,7 +201,8 @@
       {"t": "Finish Andy's final mission before pushing into the late-game chapters to be safe.", "c": [3, 2]},
       {"t": "The trophy pops at the strand's closing cutscene.", "c": [5, 1]},
       {"t": "Andy's missions are marked with his initial once the strand is active.", "c": [8, 4]},
-      {"t": "If a follow-up does not appear, sleep or wait a day in-game.", "c": [9, 10]}
+      {"t": "If a follow-up does not appear, sleep or wait a day in-game.", "c": [9, 10]},
+      {"t": "Andy's strand is one of the eight the silver counts, so log it on the strand counter the moment his closing cutscene ends.", "c": [12, 2]}
     ]},
     {"id": 23, "name": "This Was No Boat Accident", "guide": "Complete Kenton's water-based stranger strand from his marker near the coast. Bring or borrow a boat for the offshore middle missions and finish his final mission before the story endgame.", "description": "Complete the final mission for Kenton.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": true, "lastChance": "Chapter 4", "steps": [
       {"t": "Kenton's strand revolves around the water; start it at his stranger marker near the coast.", "c": [8, 10]},
@@ -199,6 +225,8 @@
       {"t": "Andy, Kenton, Billy, Randy and Tyrone each anchor one strand with its own trophy.", "c": [2, 10]},
       {"t": "New strands appear as the story opens new regions of Leonida.", "c": [11, 9]},
       {"t": "Finish strands as they appear instead of stockpiling them for the endgame.", "c": [3, 5]},
+      {"t": "Count strands on the Tracker as you close them — the eight are the named strands plus the shorter ones that open with new regions, and the counter is the authority.", "c": [12, 2]},
+      {"t": "The roadmap puts strands before the endgame for a reason: several givers leave the map during the finale stretch, so Chapter 4 is the safe deadline.", "c": [13, 3]},
       {"t": "The silver pops when your eighth full strand is completed.", "c": [1, 2]}
     ]},
     {"id": 26, "name": "Supply & Demand", "guide": "Complete Randy's stranger strand about moving product, starting at his stranger marker. Learn the depot routes early for his timed delivery runs and finish his final mission before the endgame chapters.", "description": "Complete the final mission for Randy.", "tier": "bronze", "points": 15, "secret": true, "kind": "story", "missable": false, "atRisk": true, "lastChance": "Chapter 4", "steps": [
@@ -217,12 +245,14 @@
       {"t": "Tyrone's strand counts toward the eight for Strangers & Freaks.", "c": [2, 4]},
       {"t": "Night-time starts suit his missions' stealth-friendly openings.", "c": [9, 11]}
     ]},
-    {"id": 28, "name": "Positive Mental Attitude", "guide": "Meditate at every marked spot across Leonida, usually quiet viewpoints on hills, roofs and shorelines. Stand on the marker and hold the prompt until the meditation completes, sweeping region by region to avoid repeats.", "description": "Meditate at every spot across Leonida.", "tier": "bronze", "points": 15, "secret": false, "kind": "collectible", "missable": false, "atRisk": false, "lastChance": null, "steps": [
-      {"t": "Meditation spots are quiet marked viewpoints, usually on hills, roofs and shorelines.", "c": [3, 8]},
-      {"t": "Stand on the marker and hold the prompt until the short meditation completes.", "c": [10, 2]},
-      {"t": "Spots can be done in any order and at any time of day.", "c": [11, 9]},
-      {"t": "Use the Tracker counter and sweep region by region to avoid repeats.", "c": [5, 8]},
-      {"t": "The trophy pops at the final spot's completion chime.", "c": [1]}
+    {"id": 28, "name": "Positive Mental Attitude", "guide": "Work through all 18 meditation spots spread across Leonida, starting with the one-off balcony meditation offered at Jason's house in Chapter 1 — that single session never comes back, so take it when Lucia offers it. Every other spot is a marked viewpoint on a hill, roof or shoreline, and Jason and Lucia each count separately at the outdoor spots, so visit each one with both leads. Keep an eye on the in-game tracker total as you sweep region by region, and the trophy lands when the count reaches 18.", "description": "Meditate at every spot across Leonida.", "tier": "bronze", "points": 15, "secret": false, "kind": "collectible", "missable": false, "atRisk": true, "lastChance": "Chapter 1", "steps": [
+      {"t": "The morning after the opening mission, follow Lucia to the balcony at Jason's house and accept the meditation — it is offered once, in Chapter 1 only.", "c": [3, 2]},
+      {"t": "Keep a Chapter 1 manual save until the trophy pops, in case the balcony spot turns out to be required.", "c": [3, 4]},
+      {"t": "The other spots are marked viewpoints across Leonida — hills, roofs and shorelines — and can be done in any order.", "c": [8, 5]},
+      {"t": "Meditate at each outdoor spot with both Jason and Lucia: each character's session counts separately toward the 18.", "c": [3, 11]},
+      {"t": "The in-game tracker (Progress > Collections > Exploration > Meditations) shows the running total — sweep region by region to avoid repeats.", "c": [5, 8]},
+      {"t": "The final spot opens only after the others are done and needs both leads playable.", "c": [3, 10]},
+      {"t": "The 100% checklist only asks for 15 of the 18, so the balcony spot cannot block the 100% trophy either way.", "c": [3, 5]}
     ]},
     {"id": 29, "name": "Fair Game", "guide": "Meet Bret to unlock hunting, finish his introductory hunts, then accept his request for a unique animal. Track it in its marked territory using the trail prompts, take a clean shot, and return the kill to Bret.", "description": "Hunt a unique animal for Bret.", "tier": "bronze", "points": 15, "secret": true, "kind": "activity", "missable": false, "atRisk": true, "lastChance": "Chapter 4", "steps": [
       {"t": "Meet Bret to unlock hunting, then accept his request for a unique animal.", "c": [8, 10]},
@@ -237,6 +267,8 @@
       {"t": "Cards belong to themed sets; completing any three full sets earns the trophy.", "c": [2, 10]},
       {"t": "Cards glow faintly and chime when close, so sweep interiors slowly.", "c": [11, 9]},
       {"t": "Prioritise the shortest sets first; the Tracker shows set progress per group.", "c": [5, 4]},
+      {"t": "Count each set on its own screen before committing: set sizes differ by theme, and the full list of sets is shorter than the raw card total suggests.", "c": [12, 9]},
+      {"t": "Route card interiors together with the WAiNK and meditation sweeps in the same districts — the three hunts share most of their map.", "c": [8, 13]},
       {"t": "The silver pops when the third set is completed.", "c": [1, 2]}
     ]},
     {"id": 31, "name": "You WAiNKer!", "guide": "Use the WAiNK action at 100 unique marked locations, which cluster around landmarks, beaches and viewpoints. Each spot counts once, and some only trigger in daylight, so revisit any dark spots later.", "description": "WAiNK It at 100 locations.", "tier": "silver", "points": 30, "secret": false, "kind": "collectible", "missable": false, "atRisk": false, "lastChance": null, "steps": [
@@ -244,6 +276,8 @@
       {"t": "Each location counts once; the in-game counter confirms every new spot.", "c": [2, 10]},
       {"t": "Spots cluster around landmarks, beaches and viewpoints, so route them with meditation spots.", "c": [11, 9]},
       {"t": "Some spots only trigger in daylight, so revisit dark ones later if the prompt is missing.", "c": [4, 5]},
+      {"t": "Keep a running count against the full list of 100 locations: if the counter and your route disagree, the gap is a daylight-only spot you passed at night.", "c": [12, 2]},
+      {"t": "Beach and viewpoint clusters are the densest ground — clear the Ocean Beach strip in one daylight pass before moving inland.", "c": [8, 11]},
       {"t": "The silver pops at the 100th unique location.", "c": [1]}
     ]},
     {"id": 32, "name": "One Last Thing", "guide": "Complete 50 of the scored Challenges listed in the pause menu's Challenges tab. They span driving, combat, exploration and money milestones, so pin the nearly-finished ones and close them out in free roam.", "description": "Complete 50 Challenges.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
@@ -252,13 +286,16 @@
       {"t": "Pin the nearly-finished challenges and close them out in free roam sessions.", "c": [11, 9]},
       {"t": "The trophy pops on your 50th completed challenge.", "c": [5, 1]},
       {"t": "Challenge progress carries across both protagonists.", "c": [4, 2]},
-      {"t": "Daily-style challenges refresh, giving an endless supply toward 50.", "c": [9, 10]}
+      {"t": "Daily-style challenges refresh, giving an endless supply toward 50.", "c": [9, 10]},
+      {"t": "Count unique completions, not attempts: the tab lists 50 distinct challenges to close, and the category totals show exactly how many remain in each.", "c": [12, 3]}
     ]},
     {"id": 33, "name": "Hot Together", "guide": "With your partner beside you in free roam, deliberately raise a 4-star wanted level, then break line of sight, swap vehicles and hide until the stars drain completely. Your partner must still be with you when the heat clears.", "description": "Lose a 4 star Wanted Level with your partner and escape the heat.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Have your partner with you in free roam, then raise a 4-star wanted level deliberately.", "c": [3, 8]},
       {"t": "Robberies and vehicle mayhem in a busy district build stars fastest.", "c": [10, 11]},
       {"t": "Break line of sight, swap vehicles and hide until the stars drain completely.", "c": [9, 2]},
       {"t": "Your partner must still be with you when the wanted level clears for it to count.", "c": [3, 5]},
+      {"t": "Plan the hide before you raise the heat: a multi-storey car park or alley garage near your mayhem district gives the vehicle swap and the hiding spot in one move.", "c": [10, 13]},
+      {"t": "The AI partner counts for this — no second player is needed, but keep them in the car during the swap so they are beside you when the stars drain.", "c": [3, 2]},
       {"t": "The trophy pops the moment the heat is fully escaped together.", "c": [1]}
     ]},
     {"id": 34, "name": "Retail Therapy", "guide": "With your partner present, rob 3 shops close together in one district back-to-back without the wanted level ever fully clearing between them. Plan the route first and keep the car running outside each shop.", "description": "Rob 3 shops back-to-back with your partner without losing your Wanted Level.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
@@ -266,13 +303,16 @@
       {"t": "With your partner present, rob the first till to raise a wanted level.", "c": [10, 2]},
       {"t": "Move straight to the next shops; the wanted level must never fully clear between them.", "c": [11, 9]},
       {"t": "Keep the car running outside each shop to keep the chain fast and controlled.", "c": [3]},
-      {"t": "The trophy pops as the third shop's robbery registers.", "c": [5, 1]}
+      {"t": "The trophy pops as the third shop's robbery registers.", "c": [5, 1]},
+      {"t": "Scout the chain in daylight first: three tills within two blocks of each other in one district keeps the wanted level alive without letting it spike past control.", "c": [3, 13]}
     ]},
     {"id": 35, "name": "Whip It Good", "guide": "Enter and drive 100 unique vehicles; each one is discovered the first time you drive it. Roam rich, rural and industrial districts and check parking lots, marinas and the airport for unusual spawns.", "description": "Discover 100 vehicles.", "tier": "bronze", "points": 15, "secret": false, "kind": "collectible", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "A vehicle is discovered the first time you enter and drive it.", "c": [3, 2]},
       {"t": "Different districts spawn different traffic, so roam rich, rural and industrial areas.", "c": [8, 10]},
       {"t": "Story missions quietly add several rare vehicles to the count.", "c": [11, 9]},
       {"t": "Check parking lots, marinas and the airport for unusual spawns.", "c": [4, 5]},
+      {"t": "Work against the full vehicle list by class — cars, bikes, boats, aircraft and service vehicles all count, and the rarest entries hide in the classes players drive least.", "c": [12, 8]},
+      {"t": "Mission handovers help more than they look: every gifted or borrowed story vehicle you actually drive adds to the 100, so never hand one back un-driven.", "c": [11, 3]},
       {"t": "The trophy pops when the 100th unique vehicle is driven.", "c": [1]}
     ]},
     {"id": 36, "name": "Gunslinger", "guide": "Take down 5 enemies inside a single Combat Focus activation. Use a high-capacity automatic weapon on a dense group in a gang hideout or the Operation Savage Glory warehouse, pre-aiming before you trigger Focus.", "description": "Take down 5 enemies in a single use of Combat Focus.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
@@ -280,7 +320,8 @@
       {"t": "Gang hideouts and the Operation Savage Glory warehouse give dense enemy groups.", "c": [10, 11]},
       {"t": "Use a high-capacity automatic weapon and pre-aim at the group before triggering Focus.", "c": [9, 2]},
       {"t": "Headshots drop targets fastest, preserving precious Focus time.", "c": [3, 5]},
-      {"t": "The trophy pops as the fifth enemy falls within the same Focus window.", "c": [1]}
+      {"t": "The trophy pops as the fifth enemy falls within the same Focus window.", "c": [1]},
+      {"t": "If the warehouse group thins out, a gang hideout at night respawns the same density — line up five targets before you spend the activation, not during it.", "c": [10, 12]}
     ]},
     {"id": 37, "name": "Catch Me If You Can", "guide": "In free roam after VCIA Takedown, get airside at Vice City International Airport, commandeer a plane that is not scheduled for you, and take off clear of the airport's airspace with the plane intact.", "description": "Make an unscheduled departure at VCIA.", "tier": "bronze", "points": 15, "secret": true, "kind": "misc", "missable": false, "atRisk": true, "lastChance": "Before the final mission", "steps": [
       {"t": "VCIA is Vice City International Airport; head there in free roam after VCIA Takedown.", "c": [8, 10]},
@@ -288,7 +329,8 @@
       {"t": "Take off successfully and clear the airport's airspace with the plane intact.", "c": [3, 2]},
       {"t": "The trophy pops once the departure registers mid-flight.", "c": [5, 1]},
       {"t": "A fast small plane spawns airside most evenings.", "c": [11, 4]},
-      {"t": "You do not need to land anywhere; leaving VCIA airspace is enough.", "c": [9, 2]}
+      {"t": "You do not need to land anywhere; leaving VCIA airspace is enough.", "c": [9, 2]},
+      {"t": "Do this before the final mission while the airport routine is calm — the roadmap flags the departure as at risk once the endgame starts moving traffic around.", "c": [13, 8]}
     ]},
     {"id": 38, "name": "Challenging Tank", "guide": "Find a Rhino tank at a military or impound location, or intercept a highway military convoy. Climb in, plan your escape for the heavy heat it draws, and stay inside the Rhino until the hidden condition registers.", "description": "Kinda hot in these Rhinos.", "tier": "bronze", "points": 15, "secret": true, "kind": "misc", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "The description points at the Rhino tank; find one at a military or impound location.", "c": [8, 11]},
@@ -311,6 +353,8 @@
       {"t": "Bring cutting gear or explosives as the branch layout demands.", "c": [10, 11]},
       {"t": "Loot the vault quickly, then escape and fully lose the wanted level to bank the success.", "c": [9, 2]},
       {"t": "Repeat at five different branches; the Tracker counter shows confirmed escapes.", "c": [5, 3]},
+      {"t": "Run it solo with the AI partner posted at the vault door: stage the take in bags by the exit first, then loot the last shelf only if the timer is comfortable.", "c": [13, 10]},
+      {"t": "Count branches, not robberies — the list is five different vaults, and re-hitting a cleared branch pays cash but does not move this counter.", "c": [12, 3]},
       {"t": "The silver pops after the fifth successful vault escape.", "c": [1]}
     ]},
     {"id": 41, "name": "A Classic Blitz Play", "guide": "Stop an armored truck on its patrol route, blast or cut the rear doors open, grab the cash, and escape the responding wanted level completely. Trucks spawn most often near banks in the financial district.", "description": "Rob an Armored Truck and escape.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
@@ -327,7 +371,8 @@
       {"t": "A plane or helicopter sweep is the fastest way to spot unexplored patches.", "c": [11, 9]},
       {"t": "The trophy pops when the final region is entered.", "c": [5, 1]},
       {"t": "Boats count for coastal and island regions you cannot drive to.", "c": [8, 4]},
-      {"t": "The map's fog edge shows exactly which region borders remain.", "c": [9, 2]}
+      {"t": "The map's fog edge shows exactly which region borders remain.", "c": [9, 2]},
+      {"t": "Count regions off the map's named list as the fog clears — islands and the rural corners are the usual last holdouts, and a boat sweep closes both.", "c": [12, 3]}
     ]},
     {"id": 43, "name": "Pest Control", "guide": "Rob an illegal operation belonging to each gang in Leonida. Clear the guards, empty the operation's stash and escape the area; gang territories are colour-coded on the map once discovered.", "description": "Rob an Illegal Operation belonging to each gang.", "tier": "bronze", "points": 15, "secret": false, "kind": "activity", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Each gang runs illegal operations in its own territory; all gangs must be hit once.", "c": [3, 8]},
@@ -374,14 +419,17 @@
       {"t": "Make a manual save in a fresh slot immediately before the choice prompt appears.", "c": [3, 10]},
       {"t": "Pick either branch: the trophy rewards committing to a choice, not a specific one.", "c": [2, 11]},
       {"t": "If it does not pop, reload the save and take the other branch.", "c": [9, 5]},
-      {"t": "Treat it as missable: after the finale there is no way back to the choice.", "c": [3, 2]}
+      {"t": "Treat it as missable: after the finale there is no way back to the choice.", "c": [3, 2]},
+      {"t": "The roadmap's save discipline is the whole trick here: one fresh-slot save before the endgame choice is what keeps this a one-playthrough trophy.", "c": [13, 3]},
+      {"t": "If the trophy stays silent after your branch resolves, reload that save before doing anything else and commit to the other branch instead.", "c": [2, 9]}
     ]},
     {"id": 49, "name": "Bad Luck, I Guess", "guide": "At the repeatable story set piece tied to this trophy, let the first attempt fail naturally rather than reloading instantly, then succeed on the immediate second attempt. Keep a save beforehand in case the first attempt accidentally succeeds.", "description": "Second time's the charm.", "tier": "bronze", "points": 15, "secret": true, "kind": "misc", "missable": true, "atRisk": true, "lastChance": "Before the final mission", "steps": [
       {"t": "The description hints at failing once, then succeeding at the same scripted beat.", "c": [8, 11]},
       {"t": "Guides place it on a repeatable story set piece where a first attempt can go wrong.", "c": [10, 3]},
       {"t": "Let the first attempt fail naturally rather than reloading instantly.", "c": [9, 2]},
       {"t": "Succeed on the immediate second attempt and the trophy pops.", "c": [5, 1]},
-      {"t": "Keep a save before the sequence in case your first attempt accidentally succeeds.", "c": [3]}
+      {"t": "Keep a save before the sequence in case your first attempt accidentally succeeds.", "c": [3]},
+      {"t": "Treat this like the other endgame one-offs: the roadmap's fresh-slot save before the final mission is what makes a failed first attempt cheap instead of costly.", "c": [13, 2]}
     ]},
     {"id": 50, "name": "The Truth Is Out There", "guide": "Visit the strange encounter location in rural Leonida at night, ideally in clear weather, and stay to watch the whole event without intervening. The trophy pops as the event ends and normal play resumes.", "description": "What the hell just happened?", "tier": "bronze", "points": 15, "secret": true, "kind": "misc", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "A hidden weird-moment trophy; guides tie it to a strange encounter in rural Leonida.", "c": [8, 11]},
@@ -404,6 +452,8 @@
       {"t": "Deliver bills to a laundering contact and wait for the cleaned payout.", "c": [10, 2]},
       {"t": "Bank-vault and armored-truck robberies yield the largest marked hauls.", "c": [11, 9]},
       {"t": "Only cleaned money counts toward the $250,000 total.", "c": [3, 5]},
+      {"t": "Count what lands, not what you hand over: contacts take a fee off each wash, so feed the contacts more than $250,000 of Marked Bills before expecting the pop.", "c": [12, 10]},
+      {"t": "Chain the supply: a bank vault followed by an armored truck on its bank-district route is the biggest single marked haul you can deliver in one run.", "c": [11, 3]},
       {"t": "The trophy pops when cumulative laundered earnings pass $250,000.", "c": [1]}
     ]},
     {"id": 53, "name": "Treat Yo Self", "guide": "Spend $100,000 cumulatively across all shops, covering vehicles, weapons, clothes, property extras and services. Big-ticket vehicle and weapon upgrades burn through the total fastest, and spending counts across both protagonists.", "description": "Spend $100,000 across all shops.", "tier": "bronze", "points": 15, "secret": false, "kind": "misc", "missable": false, "atRisk": false, "lastChance": null, "steps": [
@@ -412,7 +462,8 @@
       {"t": "Spending is cumulative across the whole playthrough and both protagonists.", "c": [11, 9]},
       {"t": "The trophy pops the moment total spend crosses $100,000.", "c": [5, 1]},
       {"t": "Property purchases count toward the total as well as shop goods.", "c": [4, 2]},
-      {"t": "Ammo and armour restocks between missions add up surprisingly fast.", "c": [9, 10]}
+      {"t": "Ammo and armour restocks between missions add up surprisingly fast.", "c": [9, 10]},
+      {"t": "Pair this with the garage hunt: every garage purchase and the vehicles you store in them are shop spending, so the property run does most of this total for you.", "c": [12, 4]}
     ]},
     {"id": 54, "name": "Little Boxes", "guide": "Purchase every garage property in Leonida from its for-sale sign or the in-game property site. New garages unlock as the story opens new regions, so save heist payouts for the expensive late-game ones.", "description": "Purchase all garage properties.", "tier": "bronze", "points": 15, "secret": false, "kind": "collectible", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Garage properties are bought from their for-sale signs or the in-game property site.", "c": [3, 8]},
@@ -420,7 +471,8 @@
       {"t": "Save heist payouts for the expensive late-game garages instead of splurging early.", "c": [11, 9]},
       {"t": "The trophy pops when the final garage is purchased.", "c": [5, 1]},
       {"t": "Garages also serve the vehicle-collection trophies, so buy them early.", "c": [8, 4]},
-      {"t": "The property site lists every garage still for sale.", "c": [9, 2]}
+      {"t": "The property site lists every garage still for sale.", "c": [9, 2]},
+      {"t": "Count garages against the property site's full list before the final purchase run — new listings appear as regions open, so an early sweep will miss the late-game ones.", "c": [12, 10]}
     ]},
     {"id": 55, "name": "On the Spot", "guide": "Open the Scooter Bros app on the in-game phone while sitting in a vehicle and register it; repeat with 10 unique vehicles. Stolen street cars count, so this finishes quickly during normal free roam.", "description": "Register 10 vehicles to the Scooter Bros app.", "tier": "bronze", "points": 15, "secret": false, "kind": "collectible", "missable": false, "atRisk": false, "lastChance": null, "steps": [
       {"t": "Open the Scooter Bros app on the in-game phone while sitting in a vehicle.", "c": [3, 8]},
@@ -428,19 +480,28 @@
       {"t": "Stolen street cars count, so this finishes quickly during normal free roam.", "c": [11, 9]},
       {"t": "The trophy pops on the 10th registration.", "c": [5, 1]},
       {"t": "Registering the same vehicle twice does not add to the count.", "c": [9, 4]},
-      {"t": "Personal vehicles already owned can be registered straight away.", "c": [10, 2]}
+      {"t": "Personal vehicles already owned can be registered straight away.", "c": [10, 2]},
+      {"t": "Count registrations against the full list of 10 as you go — the app keeps its own tally, and stolen cars you register before ditching them are the fastest way to close it.", "c": [12, 5]}
     ]}
   ],
   "disputes": [
     {"trophy": 15, "q": "Do stunt-series events count toward the 250, or only marked stunt jumps?", "a": {"t": "Only marked stunt spots count; series events feed Challenges instead.", "c": [3, 2]}, "b": {"t": "Any stunt the game scores, including series events, adds to the counter.", "c": [8, 9]}, "call": "Trust the in-game counter after one series event: it does not move, so plan routes around marked spots only."},
-    {"trophy": 28, "q": "How many meditation spots are there in total?", "a": {"t": "18 spots, matching the Tracker group total at launch.", "c": [3, 5]}, "b": {"t": "24 spots, with six more appearing after the story ends.", "c": [8, 11]}, "call": "We list 18 confirmed at launch and flag the post-story claim as unverified; finish the story, then re-sweep viewpoints."},
+    {"trophy": 28, "q": "Is the Chapter 1 balcony meditation required?", "a": {"t": "Yes — it is one of the 18 spots, and it is gone when Chapter 1 ends.", "c": [3, 2]}, "b": {"t": "Unproven — players have earned the trophy without it, and no page has tested a clean no-balcony run.", "c": [4, 5]}, "call": "Do it in Chapter 1 anyway: it takes a minute and removes the only real risk on this trophy."},
+    {"trophy": 28, "q": "How many meditations does the trophy need — 18 or 15?", "a": {"t": "18 spots for the trophy itself, per the trophy guide count.", "c": [3]}, "b": {"t": "The 100% checklist stops at 15, so 15 is all the gold 100% trophy asks for.", "c": [3, 5]}, "call": "Track to 18 for this trophy; the 15 figure only matters for the 100% checklist."},
     {"trophy": 30, "q": "How many cards make up a full set?", "a": {"t": "Sets are small: 6 to 9 cards each, so three sets is a short grind.", "c": [4, 2]}, "b": {"t": "Sets run to 12 cards, making this one of the longer collectible hunts.", "c": [9, 10]}, "call": "Set sizes vary by theme; start with the shortest confirmed set and let the in-game set screen settle each count."},
     {"trophy": 48, "q": "Is Actions Speak Louder actually missable?", "a": {"t": "Yes: the choice happens once, and the wrong save setup locks the trophy out.", "c": [3]}, "b": {"t": "No: both branches award it, and chapter replay restores the moment.", "c": [2, 5]}, "call": "We mark it missable. A spare save costs nothing, and no guide has shown chapter replay restoring this choice."},
     {"trophy": null, "q": "How hard and how long is the platinum?", "a": {"t": "About 4/10 difficulty and roughly 120 hours, with no skill-gated trophies.", "c": [3, 4]}, "b": {"t": "Closer to 6/10 and 200 hours once 250 stunts and 100% completion are included.", "c": [2, 11]}, "call": "Difficulty is low but the time sink is real; budget 150+ hours and treat the stunt grind as the true wall."},
     {"trophy": 14, "q": "Does 100% completion require any online play?", "a": {"t": "No: the checklist is entirely single-player, partner moments use the AI co-protagonist.", "c": [3, 6]}, "b": {"t": "Some challenge categories assume a second player and are far harder solo.", "c": [9, 10]}, "call": "No online trophies exist on this list. Partner challenges are soloable with the AI partner, just slower."},
     {"trophy": 31, "q": "Must the 100 WAiNK locations be unique?", "a": {"t": "Yes, each location counts once, confirmed by the in-game counter.", "c": [2, 5]}, "b": {"t": "Repeats at busy landmarks also count, making it a short farm.", "c": [9]}, "call": "Unique only. Repeat visits do not move the counter in any launch-week report we trust."},
     {"trophy": 25, "q": "Do stranger strands lock once the final mission starts?", "a": {"t": "All strands stay open after the credits; nothing locks.", "c": [5, 4]}, "b": {"t": "Several strand-givers leave the map during the endgame, pausing their strands until post-game.", "c": [3, 10]}, "call": "Strands return post-game, but we still flag five strand trophies at risk and advise finishing them by Chapter 4."},
-    {"trophy": 33, "q": "Does the AI partner count for the partner trophies, or is a second player needed?", "a": {"t": "The AI co-protagonist counts; both partner trophies are soloable.", "c": [3, 2]}, "b": {"t": "A second controller or online partner is required for the trophies to register.", "c": [9]}, "call": "Soloable with the AI partner. No trophy on the official list requires online play."}
+    {"trophy": 33, "q": "Does the AI partner count for the partner trophies, or is a second player needed?", "a": {"t": "The AI co-protagonist counts; both partner trophies are soloable.", "c": [3, 2]}, "b": {"t": "A second controller or online partner is required for the trophies to register.", "c": [9]}, "call": "Soloable with the AI partner. No trophy on the official list requires online play."},
+    {"trophy": 19, "q": "What does 'different races' mean — distinct events, or do replays count?", "a": {"t": "Distinct events only: each of the 20 wins has to come from a different race on the list.", "c": [3, 12]}, "b": {"t": "Replays on new vehicle classes count as fresh wins, so a handful of favourite tracks can carry the total.", "c": [9, 5]}, "call": "Plan for 20 distinct events and check the counter after a replay win — in every report we trust, it does not move."},
+    {"trophy": 35, "q": "Do story-gifted vehicles count toward the 100 discovered?", "a": {"t": "Yes — vehicles handed over in missions are discovered the moment you drive them, gifts included.", "c": [3, 11]}, "b": {"t": "Only vehicles first entered in free roam register; scripted mission cars are excluded.", "c": [12, 9]}, "call": "Watch the counter when a mission hands you a new car: it ticks up, so story gifts do count — free roam is just where the rare spawns live."},
+    {"trophy": 40, "q": "Can the five bank vaults be done solo, or do you need a partner?", "a": {"t": "Soloable with the AI partner covering the door while you work the vault — slower, but designed for one player.", "c": [3, 13]}, "b": {"t": "The vault timers assume two people looting, so a careful solo route that stages bags by the door first is the only reliable way alone.", "c": [10, 9]}, "call": "Either way it is a one-player trophy: bring the AI partner, stage the take by the exit, and do not greed the last shelf."},
+    {"trophy": 52, "q": "Is the $250,000 laundering target the gross washed amount or what lands after fees?", "a": {"t": "Gross: every dollar of Marked Bills you hand over counts, before the contact takes a cut.", "c": [3, 5]}, "b": {"t": "Net: only the cleaned payout that reaches your balance counts, so you need to wash noticeably more than $250,000 of bills.", "c": [12, 10]}, "call": "Budget for the net reading — wash extra hauls from vaults and armored trucks and let the in-game total, not your arithmetic, call it done."},
+    {"trophy": 32, "q": "Do activity challenges double-count toward the 50, or must every challenge be unique?", "a": {"t": "Unique only: the 50 are separate entries in the Challenges tab, and repeats just refresh a finished entry.", "c": [3, 2]}, "b": {"t": "Refreshed daily-style challenges count again each cycle, so a small set of easy ones can be farmed to 50.", "c": [9, 12]}, "call": "Chase variety first — pin nearly-finished unique challenges across driving, combat and money, and treat any daily repeat that ticks the counter as a bonus, not the plan."},
+    {"trophy": 14, "q": "Does 100% need every collectible in full, or only a share of each category?", "a": {"t": "A share of each: the checklist asks for a percentage of most categories — 15 of 18 meditations is the clearest example.", "c": [3, 13]}, "b": {"t": "In full: the last percentage points only land when headline collections like stunts and cards are completely finished.", "c": [12, 9]}, "call": "Follow the checklist screen itself, category by category; where it stops demanding more, stop — the full sweeps belong to their own trophies."},
+    {"trophy": 7, "q": "Can one playthrough cover both endings of the final mission?", "a": {"t": "Yes, with discipline: keep a manual save from before the endgame choice, finish one branch, reload, and take the other.", "c": [3, 13]}, "b": {"t": "No: the choice is written into the save, so the other branch needs a fresh replay of at least the endgame.", "c": [2, 10]}, "call": "Bank that pre-choice save in a fresh slot either way — if the reload works you saved a replay, and if it does not you lost nothing."}
   ],
   "collectibles": [
     {"key": "stunts", "label": "Stunts completed", "total": 250, "trophy": 15},

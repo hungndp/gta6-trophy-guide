@@ -52,6 +52,52 @@ function renderAudit() {
     risk + ' at risk · read 20 Nov 2026';
 }
 
+/* ---------- header progress + missable alert ---------- */
+function roadmapOrder() {
+  const ids = [];
+  for (const st of STAGES) for (const id of st.ids) if (!ids.includes(id)) ids.push(id);
+  for (const t of DATA.trophies) if (!ids.includes(t.id)) ids.push(t.id);
+  return ids;
+}
+function renderProgress() {
+  const el = document.getElementById('progress');
+  if (!el || !DATA) return;
+  const ts = DATA.trophies;
+  const done = ts.filter(t => earned[t.id]);
+  const tiers = { platinum: 0, gold: 0, silver: 0, bronze: 0 };
+  const tot = { platinum: 0, gold: 0, silver: 0, bronze: 0 };
+  for (const t of ts) tot[t.tier]++;
+  for (const t of done) tiers[t.tier]++;
+  const coll = Object.values(counts).reduce((a, b) => a + (Number(b) || 0), 0);
+  const pct = Math.round(done.length / ts.length * 100);
+  el.innerHTML = '<b>' + done.length + ' / ' + ts.length + '</b> earned' +
+    '<span class="headbar"><span style="width:' + pct + '%"></span></span>' +
+    '<span>P ' + tiers.platinum + '/' + tot.platinum + ' · G ' + tiers.gold + '/' + tot.gold +
+    ' · S ' + tiers.silver + '/' + tot.silver + ' · B ' + tiers.bronze + '/' + tot.bronze + '</span>' +
+    '<span>' + coll + ' collectibles logged</span>';
+}
+function renderAlert() {
+  const el = document.getElementById('alert');
+  if (!el || !DATA) return;
+  const order = roadmapOrder();
+  const flagged = DATA.trophies.filter(t => t.missable || t.atRisk)
+    .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+  const pick = flagged.find(t => t.missable) || flagged[0];
+  if (!pick) { el.innerHTML = ''; return; }
+  el.innerHTML = '<div class="alertbanner">⚠ MISSABLE WATCH — <b>' + esc(pick.name) + '</b>: last chance <b>' +
+    esc(pick.lastChance || 'see guide') + '</b> — <a href="#/guide/' + pick.id + '">open its guide</a></div>';
+}
+function sourceUse(id) {
+  let n = 0;
+  for (const t of DATA.trophies) {
+    let used = false;
+    for (const s of t.steps) if (s.c.includes(id)) used = true;
+    for (const d of disputesFor(t.id)) if (d.a.c.includes(id) || d.b.c.includes(id)) used = true;
+    if (used) n++;
+  }
+  return n;
+}
+
 /* ---------- guide view ---------- */
 const FILTERS = [
   ['all', 'All'], ['story', 'Story'], ['missable', 'Missable'], ['collectible', 'Collectibles'],
@@ -76,6 +122,13 @@ function passes(t) {
     default: return true;
   }
 }
+function countFor(k) {
+  const sf = filter, sq = query;
+  filter = k; query = '';
+  const n = DATA.trophies.filter(passes).length;
+  filter = sf; query = sq;
+  return n;
+}
 function flagHtml(t) {
   let h = '';
   if (t.missable) h += '<span class="flag miss">MISSABLE</span>';
@@ -90,11 +143,25 @@ function renderGuide(selId) {
   if (!list.some(t => t.id === selId)) selId = list.length ? list[0].id : null;
   let h = '<div class="toolbar" role="group" aria-label="Filters">';
   for (const [k, label] of FILTERS) {
-    h += '<button class="chip' + (filter === k ? ' active' : '') + '" data-filter="' + k + '">' + label + '</button>';
+    h += '<button class="chip' + (filter === k ? ' active' : '') + '" data-filter="' + k + '">' + label + ' ' + countFor(k) + '</button>';
   }
   h += '<input type="search" id="q" placeholder="Search trophies…" value="' + esc(query) + '">';
   h += '<label class="toggle"><input type="checkbox" id="shield"' + (shield ? ' checked' : '') + '> Spoiler shield (hide PSN-hidden until earned)</label>';
-  h += '</div><div class="guide-wrap"><div class="tlist">';
+  h += '</div>';
+  {
+    const order = roadmapOrder().concat([1]);
+    const stageOf = id => {
+      for (let i = 0; i < STAGES.length; i++) if (STAGES[i].ids.includes(id)) return 'Stage ' + (i + 1);
+      return 'Finale';
+    };
+    const next = order.map(id => DATA.trophies.find(t => t.id === id)).filter(t => t && !earned[t.id]).slice(0, 4);
+    if (next.length) {
+      h += '<div class="nextup"><span class="nu-label">NEXT UP · ROADMAP ORDER</span>' +
+        next.map((t, i) => '<a href="#/guide/' + t.id + '">' + (i + 1) + '. ' + esc(dispName(t)) + ' <span class="nu-stage">' +
+          (t.tier === 'platinum' ? 'Finale' : stageOf(t.id)) + '</span></a>').join('') + '</div>';
+    }
+  }
+  h += '<div class="guide-wrap"><div class="tlist">';
   if (!list.length) h += '<div class="empty">No trophies match this filter.</div>';
   for (const t of list) {
     h += '<button class="trow' + (t.id === selId ? ' sel' : '') + (earned[t.id] ? ' done' : '') + '" data-sel="' + t.id + '">' +
@@ -108,6 +175,7 @@ function renderGuide(selId) {
   h += '</div></div>';
   view.innerHTML = h;
   wireGuide(selId);
+  renderProgress(); renderAlert();
 }
 function detailHtml(t) {
   const hid = hidden(t);
@@ -116,6 +184,15 @@ function detailHtml(t) {
     '<span class="meta">#' + t.id + ' · ' + t.points + ' pts · ' + t.kind + (t.secret ? ' · PSN-hidden' : '') + '</span>';
   h += '<h2>' + esc(dispName(t)) + '</h2>';
   h += '<p class="official">“' + (hid ? 'Description hidden by the spoiler shield.' : esc(t.description)) + '”</p>';
+  h += '<div class="inshort' + (hid ? ' blur' : '') + '"><h3>IN SHORT — in our own words</h3><p>' + esc(t.guide) + '</p></div>';
+  const coll = DATA.collectibles.find(c => c.trophy === t.id);
+  if (coll) {
+    const n = counts[coll.key] || 0;
+    h += '<div class="counterrow"><span class="lbl">YOUR COUNT — ' + esc(coll.label) + '</span>' +
+      '<div class="stepper"><button data-cdec="' + coll.key + '" aria-label="minus">−</button>' +
+      '<span class="n">' + n + ' / ' + coll.total + ' ' + esc(coll.label) + '</span>' +
+      '<button data-cinc="' + coll.key + '" aria-label="plus">+</button></div></div>';
+  }
   if (t.missable) {
     h += '<div class="warnbox bad"><b>MISSABLE.</b> This can be locked out on a single playthrough.' +
       (t.lastChance ? ' Last safe point: <b>' + esc(t.lastChance) + '</b>.' : '') + ' Keep a spare manual save.</div>';
@@ -123,6 +200,7 @@ function detailHtml(t) {
     h += '<div class="warnbox"><b>AT RISK.</b> Sources report this can be delayed or locked during the endgame.' +
       (t.lastChance ? ' Last chance: <b>' + esc(t.lastChance) + '</b>.' : '') + '</div>';
   }
+  for (const d of disputesFor(t.id)) h += differHtml(d);
   h += '<ol class="steps">';
   for (const s of t.steps) {
     h += '<li' + (hid ? ' class="blur"' : '') + '>' + esc(s.t) + cites(s) + '</li>';
@@ -136,10 +214,10 @@ function detailHtml(t) {
   for (const id of ids) {
     const s = DATA.sources.find(x => x.id === id);
     h += '<li><b>[' + id + '] ' + esc(s.name) + '</b> — backs ' + per[id] + ' step' + (per[id] === 1 ? '' : 's') +
+      ' · in ' + sourceUse(id) + '/55 guides' +
       ' · <a href="' + esc(s.url) + '" rel="noopener">' + esc(s.url) + '</a> · read 20 Nov 2026</li>';
   }
   h += '</ul></div>';
-  for (const d of disputesFor(t.id)) h += differHtml(d);
   h += '<label class="earn"><input type="checkbox" id="earnbox"' + (earned[t.id] ? ' checked' : '') +
     '> I have earned this trophy</label>';
   h += '</article>';
@@ -167,6 +245,16 @@ function wireGuide(selId) {
     if (eb.checked) earned[selId] = true; else delete earned[selId];
     save(LS_EARNED, earned); renderGuide(selId);
   });
+  document.querySelectorAll('[data-cinc]').forEach(b => b.addEventListener('click', () => {
+    const c = DATA.collectibles.find(x => x.key === b.dataset.cinc);
+    if (!c) return;
+    counts[c.key] = Math.min(c.total, (counts[c.key] || 0) + 1);
+    save(LS_COUNTS, counts); renderGuide(selId); renderProgress();
+  }));
+  document.querySelectorAll('[data-cdec]').forEach(b => b.addEventListener('click', () => {
+    counts[b.dataset.cdec] = Math.max(0, (counts[b.dataset.cdec] || 0) - 1);
+    save(LS_COUNTS, counts); renderGuide(selId); renderProgress();
+  }));
 }
 
 /* ---------- roadmap view ---------- */
@@ -199,7 +287,10 @@ function renderRoadmap() {
     '<span class="stat">At risk <b>' + ts.filter(t => t.atRisk).length + '</b></span></div>';
   h += '<div class="road-wrap"><div>';
   for (const st of STAGES) {
+    const got = st.ids.filter(id => earned[id]).length;
     h += '<div class="stage"><h3>' + esc(st.name) + '</h3><p>' + esc(st.text) + '</p>' +
+      '<p class="stageprog">' + got + '/' + st.ids.length + ' earned</p>' +
+      '<div class="progress"><div style="width:' + Math.round(got / st.ids.length * 100) + '%"></div></div>' +
       '<p class="ids">Trophies: ' + st.ids.map(id => { const t = ts.find(x => x.id === id); return '#' + id + ' ' + esc(t ? t.name : ''); }).join(' · ') + '</p></div>';
   }
   for (const d of DATA.disputes.filter(x => x.trophy === null)) {
@@ -213,6 +304,7 @@ function renderRoadmap() {
   }
   h += '</ul><p class="small">Rule of thumb: one rolling manual save per chapter, in a fresh slot, before any finale or choice prompt.</p></aside></div>';
   view.innerHTML = h;
+  renderProgress(); renderAlert();
 }
 
 /* ---------- tracker view ---------- */
@@ -244,6 +336,7 @@ function renderTracker() {
   }
   h += '</div>';
   view.innerHTML = h;
+  renderProgress(); renderAlert();
   document.querySelectorAll('[data-inc]').forEach(b => b.addEventListener('click', () => {
     const c = DATA.collectibles.find(x => x.key === b.dataset.inc);
     counts[c.key] = Math.min(c.total, (counts[c.key] || 0) + 1); save(LS_COUNTS, counts); renderTracker();
@@ -287,11 +380,11 @@ function route() {
   document.querySelectorAll('[data-nav]').forEach(a => a.classList.toggle('active', a.dataset.nav === name));
   if (name === 'roadmap') renderRoadmap();
   else if (name === 'tracker') renderTracker();
-  else renderGuide(parts[1] ? Number(parts[1]) : 1);
+  else renderGuide(parts[1] ? Number(parts[1]) : 28);
 }
 window.addEventListener('hashchange', route);
 
 fetch('data/trophies.json')
   .then(r => r.json())
-  .then(d => { DATA = d; renderAudit(); route(); })
+  .then(d => { DATA = d; renderAudit(); renderProgress(); renderAlert(); route(); })
   .catch(e => { document.getElementById('view').innerHTML = '<div class="empty">Could not load data/trophies.json — serve the app folder over HTTP or open it via the kit preview.</div>'; });

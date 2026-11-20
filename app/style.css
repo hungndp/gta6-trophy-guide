@@ -149,3 +149,26 @@ ol.steps li { margin: 7px 0; }
 h2.view { margin: 2px 0 10px; font-size: 21px; }
 .small { color: var(--muted); font-size: 13px; }
 .empty { color: var(--muted); padding: 22px; border: 1px dashed var(--line); border-radius: 12px; text-align: center; }
+
+/* v4 */
+.headprog { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; width: 100%; color: var(--muted); font-size: 13px; }
+.headprog b { color: var(--cyan); }
+.headbar { display: inline-block; width: 140px; height: 7px; background: var(--panel2); border: 1px solid var(--line); border-radius: 999px; overflow: hidden; vertical-align: middle; }
+.headbar > span { display: block; height: 100%; background: linear-gradient(90deg, var(--cyan), var(--neon)); }
+#alert { margin: 12px 20px 0; }
+#alert:empty { margin: 0; }
+.alertbanner { border: 1px solid var(--warn); border-left: 6px solid var(--bad); background: #2a2008; border-radius: 10px; padding: 10px 14px; font-size: 14px; }
+.alertbanner b { color: var(--warn); }
+.inshort { border: 1px solid var(--cyan); background: #0d1b26; border-radius: 12px; padding: 12px 14px; margin: 10px 0; }
+.inshort h3 { margin: 0 0 6px; font-size: 13px; letter-spacing: .6px; color: var(--cyan); }
+.inshort p { margin: 0; font-size: 14.5px; }
+.nextup { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; padding: 10px 12px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+.nextup .nu-label { font-size: 12px; font-weight: 800; letter-spacing: .8px; color: var(--neon); }
+.nextup a { color: var(--text); text-decoration: none; border: 1px solid var(--line); background: var(--panel2); border-radius: 999px; padding: 5px 11px; font-size: 13.5px; }
+.nextup a:hover { border-color: var(--cyan); }
+.nextup .nu-stage { color: var(--cyan); font-size: 12px; font-weight: 700; }
+.stageprog { color: var(--cyan) !important; font-weight: 700; font-size: 13px !important; }
+.stage .progress { height: 8px; margin: 4px 0 8px; }
+.counterrow { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; border: 1px dashed var(--line); border-radius: 12px; padding: 10px 12px; margin: 10px 0; background: var(--panel2); }
+.counterrow .lbl { font-weight: 700; font-size: 13px; letter-spacing: .4px; }
+.counterrow .stepper { margin-top: 0; }
